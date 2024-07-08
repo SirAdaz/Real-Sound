@@ -4,6 +4,8 @@ let form = document.getElementById("signupForm");
 let user =localStorage.getItem("datauser");
 let objUser=JSON.parse(user);
 
+const isRequired = value => value === '' ? false : true;
+
 const showError = (input, message) => {
     // reprendre le form-field element
     const formField = input.parentElement;
@@ -32,8 +34,10 @@ const showSuccess = (input) => {
 const checkEmail = () => {
     let valid = false;
     const mail = emailEl.value.trim();
-    if (objUser.mail != mail) {
-        showError(emailEl, 'le mot de passe ne peut être vide');
+    if (!isRequired(mail)) {
+        showError(emailEl, 'Le champ ne peut être vide');
+    } else if (objUser.mail != mail) {
+        showError(emailEl, "l'email ne correspond pas");
     } else {
         showSuccess(emailEl);
         valid = true;
@@ -43,8 +47,10 @@ const checkEmail = () => {
 const checkPassword = () => {
     let valid = false;
     const passord = passwordEl.value.trim();
-    if (objUser.passord != passord) {
-        showError(passwordEl, 'le mot de passe ne peut être vide');
+    if (!isRequired(passord)) {
+        showError(passwordEl, 'Le champ ne peut être vide');
+    } else if (objUser.passord !== passord) {
+        showError(passwordEl, "l'email ne correspond pas");
     } else {
         showSuccess(passwordEl);
         valid = true;
