@@ -131,7 +131,7 @@ const checkPassword = () => {
     return valid;
 };
 
-addLogin = (e) => {
+form.addEventListener('submit',function(e){ 
     e.preventDefault();
     let isFirstNamevalid = checkFirstname();
     let isLastNameValid = checkLastName();
@@ -142,7 +142,6 @@ addLogin = (e) => {
     if (isFormValid==false) {
         e.preventDefault();
     } else {
-        window.location.href='http://127.0.0.1:5500/login.html'
         let firstNameVal = document.getElementById("firstName").value;
         let lastNameVal = document.getElementById("lastName").value;
         let mailVal = document.getElementById("email").value;
@@ -154,5 +153,6 @@ addLogin = (e) => {
             passord : passordVal
         }
         dataUser = localStorage.setItem('datauser',JSON.stringify(user));
+        window.location.href='http://127.0.0.1:5500/login.html'
     };
-};
+});
