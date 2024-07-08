@@ -8,22 +8,38 @@
         <title>Real Sound</title>
     </head>
     <body>
-        <div class="container flex justify-center align-middle">
+        <div class="container">
             <form id="signupForm">
-                <h2>Connection</h2>
+                <h1>Connexion</h2>
                 <div class="form-group error success">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="firstName">Firstname :</label>
+                    <input type="text" id="firstName" name="firstName" autocomplete="off">
                     <small></small>
                 </div>
                 <div class="form-group error success">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required>
+                    <label for="lastName">Lastname :</label>
+                    <input type="lastName" id="lastName" name="lastName" autocomplete="off">
                     <small></small>
                 </div>
-                <button type="submit">Connection</button>
+                <div class="form-group error success">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" autocomplete="off">
+                    <small></small>
+                </div>
+                <div class="form-group error success">
+                    <label for="password">Password :</label>
+                    <input type="password" id="password" name="password" autocomplete="off">
+                    <small></small>
+                </div>
+                <div class="form-group error success">
+                    <label for="confirmPassword">Confirm Password :</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" autocomplete="off">
+                    <small></small>
+                </div>
+                <button type="submit">Connexion</button>
             </form>
         </div>
-        <script src="js/script.js"></script>
+        <script src="/js/form.js"></script>
+        <script type="module" src="/js/script.js"></script>
     </body>
 </html>
