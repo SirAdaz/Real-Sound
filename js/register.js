@@ -153,6 +153,6 @@ form.addEventListener('submit',function(e){
             passord : passordVal
         }
         dataUser = localStorage.setItem('datauser',JSON.stringify(user));
-        window.location.href='http://127.0.0.1:5500/login.html'
+        window.location.href='/login.html'
     };
 });
