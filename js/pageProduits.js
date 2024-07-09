@@ -1,28 +1,28 @@
 let d = new Date();
 let fullDate;
 function date() {
-    let day = d.getDate();
-    let month = d.getMonth() + 1;
-    let year = d.getFullYear();
-    let hours = d.getHours();
-    let minutes = d.getMinutes();
-    let seconds = d.getSeconds();
-    if (day < 10) {
-        day = "0" + day;
+    let DD = d.getDate();
+    let MM = d.getMonth() + 1;
+    let YYYY = d.getFullYear();
+    let hh = d.getHours();
+    let mm = d.getMinutes();
+    let ss = d.getSeconds();
+    if (DD < 10) {
+        DD = "0" + DD;
     }
-    if (month < 10) {
-        month = "0" + month;
+    if (MM < 10) {
+        MM = "0" + MM;
     }
-    if (hours < 10) {
-        hours = "0" + hours;
+    if (hh < 10) {
+        hh = "0" + hh;
     }
-    if (minutes < 10) {
-        minutes = "0" + minutes;
+    if (mm < 10) {
+        mm = "0" + mm;
     }
-    if (seconds < 10) {
-        seconds = "0" + seconds;
+    if (ss < 10) {
+        ss = "0" + ss;
     }
-    fullDate = day + '/' + month + '/' + year + " " + hours + ":" + minutes + ":" + seconds;
+    fullDate = DD + '/' + MM + '/' + YYYY + " " + hh + ":" + mm + ":" + ss;
     return fullDate;
 }
 fullDate = date();
