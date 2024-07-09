@@ -51,3 +51,18 @@ button:hover {
 .form-group small {
     color: var(--error-color);
 }
+th, td{
+    border: solid 1px black;
+    text-align: center;
+}
+th{
+    background-color: gray;
+}
+table{
+    border-collapse: separate;
+    width: 100%;
+}
+.imgtable{
+    height: 200px;
+    width: auto;
+}

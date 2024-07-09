@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="img/logovynile.png" />
+        <title>Real Sound</title>
+    </head>
+    <body>
+        <p>Bonjour <span id="firstName"></span> <span id="lastName"></span> Connexion le <span id="date"></span></p>
+    </body>
+    <table>
+        <thead>
+            <tr>
+                <th>Article</th>
+                <th>nombre d'article</th>
+                <th>prix unitaire</th>
+                <th>prix totaux</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="blockBillie">
+                <td><img src="img/billieEilishDisque.png" class="imgtable" alt="">Disque de Billie Eilish</td>
+                <td id="nbBillie"></td>
+                <td>39.99€</td>
+                <td id="prixBillie"></td>
+            </tr>
+            <tr id="blockTaylor">
+                <td><img src="img/taylordSwiftDisque.png" class="imgtable" alt="">Disque de Taylord Swift</td>
+                <td id="nbTaylor"></td>
+                <td>38.99€</td>
+                <td id="prixTaylor"></td>
+            </tr>
+            <tr id="blockWeeknd">
+                <td><img src="img/theWeekndDisque.png" class="imgtable" alt="">Disque de TheWeeknd</td>
+                <td id="nbWeeknd"></td>
+                <td>14.99€</td>
+                <td id="prixWeeknd"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="nbTotal"></td>
+                <td></td>
+                <td id="prixTotal"></td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="js/panier.js"></script>
+</html>
