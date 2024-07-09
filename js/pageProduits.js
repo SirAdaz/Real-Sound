@@ -84,6 +84,7 @@ btnBillie.addEventListener("click", function(e) {
     billie++;
     panier.billie = billie;
     localStorage.setItem("dataPanier", JSON.stringify(panier)); 
+    alert("bien ajouté");
 });
 
 btnTaylor.addEventListener("click", function(e) { 
@@ -91,6 +92,7 @@ btnTaylor.addEventListener("click", function(e) {
     taylor++;
     panier.taylor = taylor;
     localStorage.setItem("dataPanier", JSON.stringify(panier)); 
+    alert("bien ajouté");
 });
 
 btnWeeknd.addEventListener("click", function(e) { 
@@ -98,5 +100,6 @@ btnWeeknd.addEventListener("click", function(e) {
     weeknd++;
     panier.weeknd = weeknd;
     localStorage.setItem("dataPanier", JSON.stringify(panier)); 
+    alert("bien ajouté");
 });
 
