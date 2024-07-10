@@ -102,4 +102,3 @@ btnWeeknd.addEventListener("click", function(e) {
     localStorage.setItem("dataPanier", JSON.stringify(panier)); 
     alert("bien ajouté");
 });
-

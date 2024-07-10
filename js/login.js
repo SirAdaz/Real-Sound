@@ -66,6 +66,6 @@ form.addEventListener("submit", function(e){
     if (isFormValid==false) {
         e.preventDefault();
     } else {
-        window.location.href='/pageProduits.html';
+        window.location.href='pageProduits.html';
     }
 });

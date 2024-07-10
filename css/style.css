@@ -81,3 +81,27 @@ header img{
     height: 100px;
     width: auto;
 }
+.modal{
+    display:flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px
+}
+.boxModal{
+    justify-content: center;
+    border: solid 3px violet;
+    margin: auto;
+    width: 90%;
+    display:none;
+    top: 75%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute; 
+    background-color: green;
+}
+body{
+    position: relative;
+}
+.btn{
+    background-color: #dc3545;
+}
